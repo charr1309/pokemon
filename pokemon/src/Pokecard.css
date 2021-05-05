@@ -1,0 +1,36 @@
+body{
+    background-color: burlywood;
+}
+
+
+.sideBar{
+    
+    height: 400px;
+    flex-grow: 1;
+    border: 1px solid black;
+    float: inline;
+}
+
+
+  .cardSize {
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin: 5px;
+    float: right; 
+    background-color: bisque;
+    text-align: center;
+    box-shadow: 3px 3px grey;                     
+     
+      
+  }
+  li{
+      list-style: none;
+  }
+
+  /* https//assets.pokemon.com/assets/cms2/img/pokedex/detail/${id}.png */
+
+  /* https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/ */
+
+  https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json
