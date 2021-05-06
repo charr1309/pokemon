@@ -11,7 +11,9 @@ body{
     float: inline;
 }
 
-
+.imgPosition{
+    padding-left: 20px;
+}
   .cardSize {
     height: 300px;
     width: 200px;
