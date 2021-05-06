@@ -19,7 +19,11 @@ class Pokecard extends Component {
           <div>
             <img className="imgPosition"src={imgSrc}  />
             <hr></hr>
-             {name} {num} {type.map( item => <li>{item}</li>)} {weakness.map( item => <li>{item}</li>)}
+             {name} {num} 
+             <p><b>Type</b></p>
+             {type.map( item => <li>{item}</li>)} 
+             <p><b>Weaknesses</b></p>
+             {weakness.map( item => <li>{item}</li>)}
           </div>
         </div>
 

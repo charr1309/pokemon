@@ -25,6 +25,7 @@ render() {
             <form className="sideBar"  onSubmit={this.handleSubmit}>
                 <label htmlFor='Name'>Name</label>
                 <input
+                    
                     type='text'
                     name='pokeName'
                     onChange={this.handleChange} value={this.state.pokeName} placeholder='Name'/>

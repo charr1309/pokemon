@@ -4,18 +4,23 @@ body{
 
 
 .sideBar{
-    
+    text-align: center;
     height: 150px;
     flex-grow: 1;
     border: 1px solid black;
     float: inline;
 }
 
+::placeholder{
+    color: burlywood;
+    opacity: 0.5;
+    font-size: 1em;
+}
 .imgPosition{
     padding-left: 20px;
 }
   .cardSize {
-    height: 300px;
+    height: 320px;
     width: 200px;
     border: 2px solid black;
     border-radius: 5%;
@@ -23,6 +28,8 @@ body{
     float: right; 
     background-color: bisque;
     text-align: center;
+    font-size: x-small;
+    line-height: 12px;
     box-shadow: 3px 3px grey;                     
      
       
