@@ -12,7 +12,7 @@ constructor(props){
     this.handleSubmit = this.handleSubmit.bind(this);
 }
 handleChange(e) {
-    this.setState({pokeName: e.target.value});
+    this.setState({[e.target.name]: e.target.value});
 }
 handleSubmit(e) {
     e.preventDefault();
@@ -23,18 +23,24 @@ render() {
         <div>
             <h1>Narrow your search</h1>
             <form className="sideBar"  onSubmit={this.handleSubmit}>
+                <label htmlFor='Name'>Name</label>
                 <input
                     type='text'
-                    onChange={this.handleChange} />
+                    name='pokeName'
+                    onChange={this.handleChange} value={this.state.pokeName} placeholder='Name'/>
+                <label htmlFor='Type'>Type</label>
                 <input
                     type='text'
-                    onChange={this.hangleChange} />
+                    name='pokeType'
+                    onChange={this.handleChange} value={this.state.pokeType} placeholder='Type'/>
+                <label htmlFor='Weakness'>Weakness</label>
                 <input
                     type='text'
-                    onChange={this.handleChange} />
-                <input
+                    name='pokeWeakness'
+                    onChange={this.handleChange} value={this.state.pokeWeakness} placeholder='Weakness'/>
+                {/* <input
                     type='text'
-                    onChange={this.handleChange} /> 
+                    onChange={this.handleChange} value={this.state.}/>  */}
                 </form>   
         </div>
     );

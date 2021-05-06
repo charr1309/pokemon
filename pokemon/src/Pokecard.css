@@ -5,7 +5,7 @@ body{
 
 .sideBar{
     
-    height: 400px;
+    height: 150px;
     flex-grow: 1;
     border: 1px solid black;
     float: inline;

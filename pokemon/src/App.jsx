@@ -32,7 +32,7 @@ class App extends Component {
     return (
         <main className="container">
 
-<Form />
+            <Form />
       <div className="Pokecard">
         {this.state.list.map((pokemon) => {
           return (
