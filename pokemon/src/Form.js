@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {motion} from 'framer-motion'
 
 class Form extends Component {
   constructor(props) {
@@ -19,7 +20,21 @@ class Form extends Component {
   }
   render() {
     return (
-      <div>
+      <motion.div
+      initial={{
+        opacity: 0,
+        x: 0,
+        y: 0
+    }} 
+    animate={{
+        opacity: 1,
+        x: 90,
+        y:200
+    }}
+    transition={{
+        duration: 1
+    }}
+      >
         <h1>Narrow your search</h1>
         <form className="sideBar" onSubmit={this.handleSubmit}>
           <label htmlFor="Name">Name</label>
@@ -50,7 +65,7 @@ class Form extends Component {
                     type='text'
                     onChange={this.handleChange} value={this.state.}/>  */}
         </form>
-      </div>
+      </motion.div>
     );
   }
 }

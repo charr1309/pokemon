@@ -16,7 +16,9 @@
   align-items: center;
   
 }
-
+h1{
+  text-align: center;
+}
 
 /* .App-logo {
   height: 40vmin;
@@ -43,7 +45,7 @@
 
 .App-link {
   color: #61dafb;
-}
+}*/
 
 @keyframes App-logo-spin {
   from {
@@ -52,4 +54,4 @@
   to {
     transform: rotate(360deg);
   }
-} */
+} 
