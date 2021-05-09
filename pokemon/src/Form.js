@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {motion} from 'framer-motion'
+import App from './App.jsx'
 
 class Form extends Component {
   constructor(props) {
@@ -8,6 +9,8 @@ class Form extends Component {
       pokeName: "",
       pokeType: "",
       pokeWeakness: "",
+      list: "",
+      filteredList: "",
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -17,6 +20,13 @@ class Form extends Component {
   }
   handleSubmit(e) {
     e.preventDefault();
+    let name = document.getElementById("name").value.toLowerCase();
+    let temp = list;
+
+    if(name.trim()){
+        temp = temp.filter((p) => p.name.toLowerCase().includes(name));
+
+    }
   }
   render() {
     return (
@@ -29,7 +39,7 @@ class Form extends Component {
     animate={{
         opacity: 1,
         x: 90,
-        y:200
+        y:150
     }}
     transition={{
         duration: 1
@@ -61,9 +71,10 @@ class Form extends Component {
             value={this.state.pokeWeakness}
             placeholder="Weakness"
           />
-          {/* <input
-                    type='text'
-                    onChange={this.handleChange} value={this.state.}/>  */}
+          <label htmlFor="submit"></label>
+          <button
+            type='submit'
+            onChange={this.handleSubmit}>Submit</button> 
         </form>
       </motion.div>
     );

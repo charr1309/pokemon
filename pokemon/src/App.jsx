@@ -16,6 +16,7 @@ class App extends Component {
       type: "",
       weakness: "",
       list: [],
+      filteredList: [],
     };
   }
   componentDidMount() {
@@ -26,6 +27,7 @@ class App extends Component {
       .then((data) => {
         console.log(data.pokemon);
         this.setState({ list: data.pokemon });
+        this.setState({filteredList: data.pokemon})
       });
   }
 
@@ -33,11 +35,8 @@ class App extends Component {
     
     return (
         <main className="container">
-            
-            
-
-            <Form />
-      <motion.div 
+        <Form />
+        <motion.div 
             initial={{
                 opacity: 0,
                 x: 0
@@ -59,6 +58,8 @@ class App extends Component {
               num={pokemon.num}
               type={pokemon.type}
               weakness={pokemon.weaknesses}
+              list={pokemon}
+              // filteredList={pokemon}
             />
             
           );

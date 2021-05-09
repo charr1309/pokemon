@@ -4,7 +4,7 @@ body {
 
 .sideBar {
   text-align: center;
-  height: 150px;
+  height: 170px;
   flex-grow: 1;
   border: 1px solid black;
   float: inline;
@@ -39,4 +39,4 @@ li {
 
 /* https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/ */
 
-https: //raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json;
+/* https: //raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json; */

@@ -24,13 +24,13 @@ class Pokecard extends Component {
               <b>Type</b>
             </p>
             {type.map((item) => (
-              <li>{item}</li>
+              <li key={id}>{item}</li>
             ))}
             <p>
               <b>Weaknesses</b>
             </p>
             {weakness.map((item) => (
-              <li>{item}</li>
+              <li key={num}>{item}</li>
             ))}
           </div>
         </div>
