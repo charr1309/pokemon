@@ -20,8 +20,8 @@ class Form extends Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    let name = document.getElementById("name").value.toLowerCase();
-    let temp = list;
+    let name = document.getElementById({props.name}).value.toLowerCase();
+    let temp = this.props.list;
 
     if(name.trim()){
         temp = temp.filter((p) => p.name.toLowerCase().includes(name));

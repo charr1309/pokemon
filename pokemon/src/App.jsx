@@ -35,7 +35,9 @@ class App extends Component {
     
     return (
         <main className="container">
-        <Form />
+        <Form 
+        list
+        filteredList/>
         <motion.div 
             initial={{
                 opacity: 0,
@@ -58,8 +60,7 @@ class App extends Component {
               num={pokemon.num}
               type={pokemon.type}
               weakness={pokemon.weaknesses}
-              list={pokemon}
-              // filteredList={pokemon}
+              
             />
             
           );
